@@ -1,0 +1,8 @@
+== Changelog ==
+
+= 1.1.0 =
+* Added admin.php file to include all admin related functions.
+* Minor CSS fixes.
+
+= 1.0.0 =
+* Initial release

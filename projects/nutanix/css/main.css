@@ -1,0 +1,308 @@
+/*-------Clearing blue edges of bootstrap------------
+---------------------------------------------------*/
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover
+{
+   outline:0 !important;
+   -webkit-appearance:none;
+}
+
+
+/*--------Typography-----------*/
+@font-face {
+   font-family: "intro";
+   src: url("http://aravindbharathy.me/projects/nutanix/fonts/Intro.otf");
+}
+
+/*---------Navbar Styles----------
+----------------------------------*/
+
+
+.navbar-brand{
+   font-family: intro;
+   line-height: 80px;
+   padding: 0;
+   font-size: 3em;
+}
+
+.primary-logo{
+   font-family: intro;
+}
+
+.navbar-inverse .navbar-brand{
+   color: #fff;
+}
+
+.navbar-brand:HOVER{
+   color: #fff !important;
+   cursor: pointer;
+}
+
+/*Setting bg and layout*/
+body{
+   background: url("http://aravindbharathy.me/projects/nutanix/img/bg.jpg");
+   font-family: 'Source Sans Pro', sans-serif;;
+}
+
+.navbar-inverse{
+   background: #00897b ;
+}
+
+.navbar{
+   min-height: 80px;
+   border: none;
+}
+
+.subtle-box-shadow{
+   -webkit-box-shadow: 0 2px 7px 2px rgba(0,0,0,0.29);
+   -moz-box-shadow: 0 2px 7px 2px rgba(0,0,0,0.29);
+   box-shadow: 0 2px 7px 2px rgba(0,0,0,0.29);
+}
+
+.very-subtle-box-shadow{
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.29);
+   -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.29);
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.29);
+}
+
+.count-info{
+   font-family: 'Source Sans Pro', sans-serif;;
+   font-size: 1.2em;
+   float: right;
+   margin: 0 10px;
+   line-height: 80px;
+   color: #fff;
+}
+
+/*Grid Style*/
+
+/*Main Body*/
+.main-body{
+   padding: 0 2.5%;
+   position: relative;
+   top:80px;
+}
+
+.deal-box{
+   margin-bottom: 50px;
+   max-height: 300px;
+}
+
+.deal-info{
+   padding-top: 10px;
+   background: #fff;
+}
+
+.deal-desc{
+   padding: 0 20px;
+}
+
+.deal-image{
+   max-width: 80%;
+}
+
+.price-info{
+   font-size: 1.3em;
+   color: #555;
+}
+
+.actual-price{
+   font-weight: bold;
+   text-decoration: line-through;
+   color: #777;
+}
+
+.final-price{
+   font-weight: bold;
+   color: green;
+}
+
+.offer-amount{
+   display: table;
+   padding: 0 15px;
+   border: 2px solid #FFD926;
+}
+
+.offer-amount > h4{
+   font-size: 1em;
+   font-family: 'Source Sans Pro', sans-serif;;
+   font-weight: 600;
+   color: #777;
+}
+
+
+/*Info content*/
+.deal-heading{
+   display: table;
+   border-bottom: 3px solid green;
+   font-size: 1.3em;
+   color: #333;
+}
+
+.deal-provider{
+   display: table;
+   padding: 5px 10px;
+   border-radius: 2px;
+   background: #777;
+   color: #fff;
+}
+
+.extra-info{
+   padding-bottom: 30px;
+   padding-top: 20px;
+}
+
+.get-deal-block{
+   position: relative;
+   height: 50px;
+   width: 100%;
+   margin: 0;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-top: 1px solid #efefef;
+   background: #efefef;
+   text-align: center;
+}
+
+.get-deal{
+   position: relative;
+   top: -20px;
+   padding: 10px 40px;
+   border: none;
+   border-radius: 3px;
+   font-family: 'Source Sans Pro', sans-serif;;
+   font-weight: 600;
+   background: #00897b;
+   color: #fff;
+}
+
+.get-deal:HOVER{
+   background: #004d70;
+}
+
+.button-like{
+   position: absolute;
+   right: 10px;
+   margin-top: 10px;
+   color: #222;
+   border: none;
+   background: #efefef;
+}
+
+.button-like-count{
+   position: absolute;
+   left: 10px;
+   margin-top: 10px;
+   font-weight: bold;
+   color: #222;
+   border: none;
+   background: #efefef;
+}
+
+/*rating*/
+fieldset, label
+{
+   margin: 0;
+   padding: 0;
+}
+
+.rating {
+   border: none;
+   float: left;
+   margin-top: 10px;
+}
+
+.rating > input
+{
+   display: none;
+}
+
+.rating > label:before {
+   margin: 5px;
+   font-size: 1.25em;
+   font-family: FontAwesome;
+   display: inline-block;
+   content: "\f005";
+}
+
+.rating > .half:before {
+   content: "\f089";
+   position: absolute;
+   color: #FFD700;
+}
+
+.rating > label {
+   color: #ddd;
+   float: right;
+}
+
+.rating > label.selected{
+   color: #FFD700;
+}
+
+/*search and sort*/
+.search-sort{
+   background: #fff;
+   margin-bottom: 20px;
+   height: 50px;
+   line-height: 50px;
+}
+
+input.search-box{
+   width: 100%;
+   height: 40px;
+   line-height: 35px;
+   border: none;
+   border-bottom: 1px solid #ededed;
+}
+
+.sort-header{
+   text-align: right;
+   font-family: 'Source Sans Pro', sans-serif;;
+   font-weight: 600;
+}
+
+.sort-param{
+   font-family: 'Source Sans Pro', sans-serif;;
+   font-weight: 600;
+   text-align: center;
+   color: #ccc;
+   cursor: pointer;
+}
+
+.sort-param:HOVER{
+   color: #20336B;
+}
+
+
+/*---------Mobile Overrides-----------
+------------------------------------*/
+@media screen and (max-width : 768px){
+
+   .navbar-brand{
+      font-size: 1.2em;
+      margin-left: 30%;
+   }
+}
+
+/*portfolio*/
+.portfolio{
+   top: 100px;
+   margin-bottom: 50px;
+   position: relative;
+   text-align: center;
+}
+
+.portfolio > a{
+   padding: 20px 40px;
+   font-size: 1.5em;
+   background: #333;
+   color: #fff;
+}

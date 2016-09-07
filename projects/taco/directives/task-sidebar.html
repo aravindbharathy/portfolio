@@ -1,0 +1,41 @@
+<div class="sidebar subtle-box-shadow">
+    <div class="search">
+        <form name="search-form" id="search-form">
+            <div class="form-group">
+                <input class="form-control search-bar" ng-model="sidebarCtrl.searchTerm" ng-change="sidebarCtrl.searchTask()" id="search-bar" type="text" placeholder="Search Tasks">
+                <i class="fa fa-search"></i>
+            </div>
+        </form>
+    </div>
+    <div class="search-results">
+        <div class="card-holder" ng-hide="sidebarCtrl.resultSet.length == 0">
+            <div class="card" ng-repeat="(count,card) in sidebarCtrl.resultSet">
+                <div>
+                    <span ng-class="{ striked:card.isDone }">{{card.title}}</span>
+                </div>
+                <div class="card-done">
+                    <input  id="{{key}}{{count}}" type="checkbox" disabled ng-model="card.isDone">
+                    <label for="{{key}}{{count}}" ></label>
+                </div>
+                <span class="card-date">{{card.createdAt | date : 'medium'}}</span>
+                <div>
+                    <select class="task-priority" name="rating"  ng-model="card.priority">
+                        <option value="0" {{card.priority == "0" ? "selected" : ""}}>0</option>
+                        <option value="1" {{card.priority == "1" ? "selected" : ""}}>1</option>
+                        <option value="2" {{card.priority == "2" ? "selected" : ""}}>2</option>
+                        <option value="3" {{card.priority == "3" ? "selected" : ""}}>3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h4 class="activity-heading"><i class="fa fa-tasks"></i>&nbsp; Recent Activity</h4>
+    <div class="activity-holder">
+        <div class="activity" ng-repeat="recent in sidebarCtrl.recents">
+            <h5>{{recent.desc}}</h5>
+            <span>{{sidebarCtrl.timeDiff(recent.doneAt)}}</span>
+            <hr>
+        </div>
+    </div>
+</div>

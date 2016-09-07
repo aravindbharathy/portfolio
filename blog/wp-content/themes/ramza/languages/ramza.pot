@@ -1,0 +1,294 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ramza-0.4.0\n"
+"POT-Creation-Date: 2015-09-19 20:54+0800\n"
+"PO-Revision-Date: 2015-09-19 20:55+0800\n"
+"Last-Translator: \n"
+"Language-Team: Made4WP <made4wp@gmail.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: comments.php:33
+#, php-format
+msgctxt "comments title heading"
+msgid "One thought"
+msgid_plural "%1$s thoughts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:45
+#, php-format
+msgctxt "comments title heading"
+msgid "One thought on %2$s"
+msgid_plural "%1$s thoughts on %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:82
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:21
+#, php-format
+msgid "Proudly powered by %s%s%s"
+msgstr ""
+
+#: footer.php:22
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: functions.php:69
+msgid "Primary"
+msgstr ""
+
+#: functions.php:131
+msgid "Sidebar"
+msgstr ""
+
+#: header.php:26
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer/options/customizer-colors.php:24
+msgid "Theme Color"
+msgstr ""
+
+#: inc/customizer/options/customizer-colors.php:33
+msgid "Tagline Text Color"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:34 inc/template-tags.php:34
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:41 inc/template-tags.php:41
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:53 inc/template-tags.php:53
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:53 inc/template-tags.php:53
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:53 inc/template-tags.php:53
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:79 inc/template-tags.php:79
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:82 inc/template-tags.php:82
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:228 inc/template-tags.php:228
+msgid "Pages"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:261 inc/template-tags.php:266
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:264 inc/template-tags.php:269
+msgid "Older Posts"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:267 inc/template-tags.php:272
+msgid "Newer Posts"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:295 inc/template-tags.php:299 inc/template-tags.php:336
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:299 inc/template-tags.php:303 inc/template-tags.php:340
+msgid "Previous Post"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:305 inc/template-tags.php:309 inc/template-tags.php:346
+msgid "Next Post"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:329 inc/template-tags.php:395
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:331 inc/template-tags.php:397
+msgid "Edit"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:361 inc/template-tags.php:427
+#, php-format
+msgctxt "1: comment post date, 2: comment post time"
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:373 inc/template-tags.php:439
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:411 inc/template-tags.php:477
+msgid "Name"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:412 inc/template-tags.php:478
+msgid "Email"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:413 inc/template-tags.php:479
+msgid "Website"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:414 inc/template-tags.php:480
+msgid "Comment"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:447 inc/template-tags.php:513
+msgid "Post Comment"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:448 inc/template-tags.php:514
+msgid "Leave a Comment"
+msgstr ""
+
+#: inc/template-tags (Bobbyâs MacBook Pro's conflicted copy
+#: 2015-09-08).php:449 inc/template-tags.php:515
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: inc/template-tags.php:371
+msgid "Comment navigation"
+msgstr ""
+
+#: inc/template-tags.php:373
+msgid "Older Comments"
+msgstr ""
+
+#: inc/template-tags.php:374
+msgid "Newer Comments"
+msgstr ""
+
+#: search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:13 searchform.php:14
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:14
+msgctxt "search placeholder"
+msgid "Search..."
+msgstr ""
+
+#: searchform.php:16
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: template-parts/content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:22
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:28
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:36
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/nav-primary.php:15
+msgid "Menu"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Ramza"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://made4wp.com/themes/ramza/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Ramza is a basic, fully responsive blogging WordPress theme suitable for "
+"just about anything."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Made4WP"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://made4wp.com/"
+msgstr ""

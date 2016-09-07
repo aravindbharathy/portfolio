@@ -1,0 +1,13 @@
+/*
+Theme Name: Simplenotes
+Description: Simplenotes is a clean and minimal WordPress theme that requires no plugins to run. The theme features a dropdown menu, social media integration, sidebar widgets, threaded comments and more. The simple notebook is ready for both writers and readers.
+Version: 5.0
+Tags: Black, White
+Author: Carla Izumi Bamford
+Author URI: http://carla-izumi-bamford.com/
+License: GNU General Public License, v3 (or newer)
+License URI: http://www.opensource.org/licenses/gpl-3.0.html
+*/
+@import url(css/common.css);
+@import url(css/class.css);
+@import url(css/navigation.css);

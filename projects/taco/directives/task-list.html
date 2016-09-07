@@ -1,0 +1,89 @@
+<div class="list" ng-repeat="(key,list) in listCtrl.lists" data-drop="true" data-drag="true" ng-model="listCtrl.lists" jqyoui-droppable="{index: {{$index}}, onDrop : 'listCtrl.saveState()'}" jqyoui-draggable="{index: {{$index}}, insertInline: true, direction:'jqyouiDirection'}" data-jqyoui-options="{revert: 'invalid', accept : '.list'}" data-direction="{{list.jqyouiDirection}}">
+    <div class="list-header">
+        <h3 class="list-title">{{list.name}}</h3>
+        <button ng-click="listCtrl.deleteList(list)" class="btn-list-del" value="delete">
+            <i class="fa fa-trash"></i>
+        </button>
+        <button ng-click="listCtrl.enableListEditor(list,key)" ng-hide="listCtrl.isCurrentList(key) && listCtrl.editorEnabled" class="btn-list-del" value="delete">
+            <i class="fa fa-pencil"></i>
+        </button>
+        <div ng-show="listCtrl.isCurrentList(key) && listCtrl.editorEnabled">
+            <form name="listEditForm">
+                <div class="form-group">
+                    <input class="form-control list-title-edit" type="text" ng-model="listCtrl.list.name">
+                </div>
+                <button type="submit" ng-click="listCtrl.saveListTitle(list)" class="btn btn-save">Save</button>
+                <button ng-click="listCtrl.disableListEditor()" class="btn btn-cancel">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <div class="card-holder">
+        <div class="card" ng-repeat="(count,card) in list.cards" data-drop="true" data-drag="true" ng-model="list.cards" jqyoui-droppable="{index: {{$index}}, onDrop : 'listCtrl.saveState()'}" jqyoui-draggable="{index: {{$index}}, insertInline: true, direction:'jqyouiDirection'}" data-jqyoui-options="{revert: 'invalid'}" data-curlist="{{key}}" data-direction="{{list.jqyouiDirection}}">
+            <div ng-hide="listCtrl.isCurrentCardList(key) && listCtrl.isCurrentCard(count) && listCtrl.editorEnabled">
+                <span ng-class="{ striked:card.isDone }" class="card-title">{{card.title}}</span>
+                <button ng-click="listCtrl.deleteCard(list,card)" class="btn-card-del" value="delete">
+                    <i class="fa fa-minus-circle"></i>
+                </button>
+                <button ng-click="listCtrl.enableCardEditor(card,key,count)" class="btn-card-edit" value="delete">
+                    <i class="fa fa-pencil"></i>
+                </button>
+            </div>
+            <div ng-show="listCtrl.isCurrentCardList(key) && listCtrl.isCurrentCard(count) && listCtrl.editorEnabled">
+                <form name="cardEditForm">
+                    <div class="form-group">
+                        <input class="form-control card-title-edit" type="text" ng-model="listCtrl.card.title">
+                    </div>
+                    <button type="submit" ng-click="listCtrl.saveCardTitle(card)" class="btn btn-save">Save</button>
+                    <button ng-click="listCtrl.disableCardEditor()" class="btn btn-cancel">Cancel</button>
+                </form>
+            </div>
+            <div class="card-done">
+                <input  id="{{key}}{{count}}" ng-change="listCtrl.saveStateOfTask(card,'state')" type="checkbox" ng-model="card.isDone">
+                <label for="{{key}}{{count}}" ></label>
+            </div>
+            <span class="card-date">{{card.createdAt | date : 'medium'}}</span>
+            <div>
+                <select class="task-priority" ng-change="listCtrl.saveStateOfTask(card,'priority')" ng-model="card.priority" name="rating">
+                    <option value="0" {{card.priority == "0" ? "selected" : ""}}>0</option>
+                    <option value="1" {{card.priority == "1" ? "selected" : ""}}>1</option>
+                    <option value="2" {{card.priority == "2" ? "selected" : ""}}>2</option>
+                    <option value="3" {{card.priority == "3" ? "selected" : ""}}>3</option>
+                </select>
+                <i class="fa fa-comments comment-toggler" ng-click="listCtrl.showHideComment(key,count)"> <span ng-show="card.comments.length != 0">{{card.comments.length}}</span></i>
+            </div>
+            <div class="comment-block" ng-show="listCtrl.isCurrentCardList(key) && listCtrl.isCurrentCard(count) && listCtrl.commentShown">
+                <div ng-show="!card.comments.length == 0">
+                    <h5><em><b>Comments</b></em></h5>
+                    <div class="comment" ng-repeat="comment in card.comments">
+                        <button ng-click="listCtrl.deleteComment(card,comment)" class="btn-card-del" value="delete">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                        <h5>{{comment.content}}</h5>
+                        <span>{{comment.writtenAt | date : 'medium'}}</span>
+                    </div>
+                </div>
+                <form name="comment" ng-submit="listCtrl.addComment(card)">
+                    <div class="form-group comment-form">
+                        <input class="form-control" ng-model="listCtrl.commentContent" type="text" placeholder="Add a comment">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="add-card">
+        <form name="cardForm" ng-submit="listCtrl.addCard(list)">
+            <div class="form-group">
+                <input type="text" ng-model="listCtrl.card.title" class="form-control" placeholder="New Card" required>
+            </div>
+            <button type="submit" class="btn">Add</button>
+        </form>
+    </div>
+</div>
+<div class="add-list">
+    <form name="listForm" ng-submit="listCtrl.addList()">
+        <div class="form-group">
+            <input type="text" ng-model="listCtrl.list.name" required class="form-control" id="content" placeholder="New List">
+        </div>
+        <button type="submit" class="btn btn-add-list">Add</button>
+    </form>
+</div>
